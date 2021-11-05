@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Dice Roller</title>
+</head>
+<body>
+    <!-- Title -->
+    <div class="text-center bg-dark text-light pb-2">
+        <h3 class="display-3">Dice Roller</h3>
+        <h6>By Shaun Hudson</h6>
+    </div>
+
+    <!-- Dice Container -->
+    <div class="container mt-5 ">
+
+        <div class="row gx-5">
+
+            <!-- d100 -->
+            <div class="col border m-3 pb-3 background hundred">
+                <div class="p-3">
+                    <button class="btn btn-primary" id="btn-100" onclick="ani100()">Roll a d100!</button>
+                </div>
+
+                <div class="result">
+                    <label type="button" id="btn-100" onclick="ani100()">
+                        <image id="result-dice-100" src="img/d20.png"  alt="A twenty sided dice"/>
+                    </label>
+                    <div class="result-text">
+                        <h6><span id="result-100"></span></h6>
+                    </div>
+                </div>
+            </div>
+
+            <!-- d20 -->
+            <div class="col border m-3 pb-3 background twenty">
+                <div class="p-3">
+                    <button class="btn btn-primary" id="btn-20" onclick="ani20()">Roll a d20!</button>
+                </div>
+
+                <div class="result">
+                    <label type="button" onclick="ani20()">
+                        <img id="result-dice-20" src="img/d20.png" alt="A twenty sided dice"/>
+                    </label>
+                    <div class="result-text">
+                        <h6><span id="result-20"></span></h6>
+                    </div>
+                </div>
+            </div>
+
+            <!-- d12 -->
+            <div class="col border m-3 pb-3 background twelve">
+                <div class="p-3">
+                    <button class="btn btn-primary" id="btn-12" onclick="ani12()">Roll a d12!</button>
+                </div>
+
+                <div class="result">
+                    <label type="button" onclick="ani12()">
+                        <img id="result-dice-12" src="img/d20.png" alt="A twenty sided dice"/>
+                    </label>
+                    <div class="result-text">
+                        <h6><span id="result-12"></span></h6>
+                    </div>
+                </div>
+            </div>
+
+            <!-- d10 -->
+            <div class="col border m-3 pb-3 background ten">
+                <div class="p-3">
+                    <button class="btn btn-primary" id="btn-10" onclick="ani10()">Roll a d10!</button>
+                </div>
+
+                <div class="result">
+                    <label type="button" onclick="ani10()"><img id="result-dice-10" src="img/d20.png" alt="A twenty sided dice"/></label>
+                    <div class="result-text">
+                        <h6><span id="result-10"></span></h6>
+                    </div>
+                </div>
+            </div>
+
+            <!-- d8 -->
+            <div class="col border m-3 pb-3 background eight">
+                <div class="p-3">
+                    <button class="btn btn-primary" id="btn-8" onclick="ani8()">Roll a d8!</button>
+                </div>
+
+                <div class="result">
+                    <label type="button" onclick="ani8()"><img id="result-dice-8" src="img/d20.png" alt="A twenty sided dice"/></label>
+                    <div class="result-text">
+                        <h6><span id="result-8"></span></h6>
+                    </div>
+                </div>
+            </div>
+
+            <!-- d6 -->
+            <div class="col border m-3 pb-3 background six">
+                <div class="p-3">
+                    <button class="btn btn-primary" id="btn-6" onclick="ani6()">Roll a d6!</button>
+                </div>
+
+                <div class="result">
+                    <label type="button" onclick="ani6()"><img id="result-dice-6" src="img/d20.png" alt="A twenty sided dice"/></label>
+                    <div class="result-text">
+                        <h6><span id="result-6"></span></h6>
+                    </div>
+                </div>
+            </div>
+
+            <!-- d4 -->
+            <div class="col border m-3 pb-3 background four">
+                <div class="p-3 ">
+                    <button class="btn btn-primary justify-content-center" id="btn-4" onclick="ani4()">Roll a d4!</button>
+                </div>
+
+                <div class="result">
+                    <label type="button" onclick="ani4()"><img id="result-dice-4" src="img/d20.png" alt="A twenty sided dice"/></label>
+                    <div class="result-text">
+                        <h6><span id="result-4"></span></h6>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <audio src="roll.mp3" id="roll-sound"></audio>
+
+    <!-- Link to javascript -->
+    <script src="main.js"></script>
+
+</body>
+</html>

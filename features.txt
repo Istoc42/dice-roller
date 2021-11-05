@@ -1,0 +1,22 @@
+Dice Roller by Shaun Hudson
+------------------------------------------------------------
+
+**** New features to add ****
+
+Visual
+- Change placeholders to correct dice 
+
+Functional
+- Add a roll history
+- Roll multiple dice at once
+- Add modifier to rolls
+
+
+------------------------------------------------------------
+
+Completed
+- Add a title
+- Add a background
+- Special effect on a 1 or crit
+- Dice roll sound(!)
+- Click on dice to roll

@@ -1,0 +1,63 @@
+/* CSS RESET */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* MAIN BACKGROUND IMAGE */
+body {
+    background-image: url('img/paper.jpg');
+}
+
+/* ANIMATION FOR DICE SPIN ON CLICK */
+.dice-spin {
+    -webkit-animation:spin .25s linear ;
+    -moz-animation:spin .25s linear ;
+    animation:spin .25s linear ;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+/* SEMI TRANSPARENT BACKGROUND FOR DICE CARDS*/
+.background {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* DISPLAY RESULT INSIDE DICE IMAGE */
+.result {
+    position: relative;
+    text-align: center;
+    color: antiquewhite;
+    display: block;
+}
+
+.result-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.result img {
+    width: 80px;
+    display: block;
+    margin: auto;
+}
+
+/* CRIT AND FAIL BORDERS */
+.fail {
+    border: 2px solid red;
+    border-radius: 7px;
+    outline: none;
+    box-shadow: 0 0 10px red;
+}
+
+.crit {
+    border: 2px solid green;
+    border-radius: 7px;
+    outline: none;
+    box-shadow: 0 0 10px green;
+}
